@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{ name:'Home' }">
+  <router-link :to="{ name:'HomePage' }">
     <div class="main-title font-semibold p-2 uppercase">
       <h3>
         {{ title }}

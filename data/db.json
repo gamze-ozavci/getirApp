@@ -3,85 +3,127 @@
     {
       "id": 3,
       "name": "Elidor Güçlü ve Parlak",
-      "categories": ["Kişisel Bakım"],
+      "categories": [
+        "Kişisel Bakım"
+      ],
       "image": "https://cdn.getir.com/product/5ce65821fd9b330001c4a987_76c0c649-4e30-46ad-b22c-987d308e5748.jpeg",
-      "price": 25.90,
-      "originalPrice": 32.50
+      "price": 25.9,
+      "originalPrice": 32.5,
+      "quantity": 1
     },
     {
       "id": 4,
       "name": "Nogger Paketi",
-      "categories": ["Dondurma"],
+      "categories": [
+        "Dondurma"
+      ],
       "image": "https://cdn.getir.com/product/62e251a9316441a5a5928aff_tr_1659692215906.jpeg",
       "price": 49,
-      "originalPrice": 60
+      "originalPrice": 60,
+      "quantity": 1
     },
     {
       "id": 5,
       "name": "Erikli",
-      "categories": ["Su & İçecek"],
+      "categories": [
+        "Su & İçecek"
+      ],
       "image": "https://cdn.getir.com/product/5fbce44d7d580fc3304aee67_tr_1663337670673.jpeg",
-      "price": 31.10,
-      "originalPrice": 38.80
+      "price": 31.1,
+      "originalPrice": 38.8,
+      "quantity": 1
     },
     {
       "id": 6,
       "name": "Colgate Zig Zag Charcoal",
-      "categories": ["Kişisel Bakım"],
+      "categories": [
+        "Kişisel Bakım"
+      ],
       "image": "https://cdn.getir.com/product/5e936403f9f1a4e80b11e5aa_tr_1605687129209.png",
       "price": 43.99,
-      "originalPrice": 43.99
+      "originalPrice": 43.99,
+      "quantity": 1
     },
     {
       "id": 7,
       "name": "Sleepy Natural 2 Beden",
-      "categories": ["Bebek"],
+      "categories": [
+        "Bebek"
+      ],
       "image": "https://cdn.getir.com/product/5ceae037c461e70001cc97f8_tr_1560255462225.jpeg",
       "price": 12,
-      "originalPrice": 19
+      "originalPrice": 19,
+      "quantity": 1
     },
     {
       "id": 8,
       "name": "Whiskas 1 Yaş Üstü Sığır Etli",
-      "categories": ["Evcil Hayvan"],
+      "categories": [
+        "Evcil Hayvan"
+      ],
       "image": "https://cdn.getir.com/product/55983faab1dc700c006a724d_tr_1601931914145.jpeg",
-      "price": 41.50,
-      "originalPrice": 55
+      "price": 41.5,
+      "originalPrice": 55,
+      "quantity": 1
     },
     {
       "id": 9,
       "name": "Cumhuriyet Gazetesi",
-      "categories": ["Ev & Yaşam"],
+      "categories": [
+        "Ev & Yaşam"
+      ],
       "image": "https://cdn.getir.com/product/5ea824181dbe2b58f152951f_tr_1588244080645.jpeg",
       "price": 6,
-      "originalPrice": 6
+      "originalPrice": 6,
+      "quantity": 1
     },
     {
       "id": 10,
       "name": "Metaltex Jolly Şişe Açacağı",
-      "categories": ["Ev & Yaşam"],
+      "categories": [
+        "Ev & Yaşam"
+      ],
       "image": "https://cdn.getir.com/product/5ceae037c461e70001cc97f8_tr_1560255462225.jpeg",
-      "price": 23.50,
-      "originalPrice": 23.50
+      "price": 23.5,
+      "originalPrice": 23.5,
+      "quantity": 1
     },
     {
       "id": 11,
       "name": "Coca-Cola Zero Sugar",
-      "categories": ["Su & İçecek"],
+      "categories": [
+        "Su & İçecek"
+      ],
       "image": "https://market-product-images-cdn.getirapi.com/product/57ebcb84-6a39-44bd-87d4-45fb638b7e9b.jpg",
-      "price": 62.50,
-      "originalPrice": 62.50
+      "price": 62.5,
+      "originalPrice": 62.5,
+      "quantity": 1
     },
     {
       "id": 12,
       "name": "Ice Dream Antep Fıstıklı",
-      "categories": ["Dondurma"],
+      "categories": [
+        "Dondurma"
+      ],
       "images": "https://market-product-images-cdn.getirapi.com/product/5aadcf13-2a90-4178-b626-74ddf0e96115.jpg",
       "price": 40,
-      "originalPrice": 40
+      "originalPrice": 40,
+      "quantity": 1
     }
   ],
-  "baskets": [],
+  "baskets": [
+    {
+      "id": 6,
+      "name": "Colgate Zig Zag Charcoal",
+      "categories": [
+        "Kişisel Bakım"
+      ],
+      "image": "https://cdn.getir.com/product/5e936403f9f1a4e80b11e5aa_tr_1605687129209.png",
+      "price": 43.99,
+      "originalPrice": 43.99,
+      "quantity": 5
+    }
+  ],
   "categories": [
     {
       "id": "kisiselBakim",

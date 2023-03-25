@@ -28,14 +28,11 @@
 <script>
 export default {
   name: 'Slider',
+  props: [
+    'images'
+  ],
   data() {
     return {
-      images: [
-        'https://img-lcwaikiki.mncdn.com/Resource/Images/Banner/200122-elsiva.jpg',
-        'https://img-lcwaikiki.mncdn.com/Resource/Images/Banner/190123-markalaraozel-10-20-30.jpg',
-        'https://img-lcwaikiki.mncdn.com/Resource/Images/Banner/200123-100tlveuzeri-ke.jpg',
-        'https://img-lcwaikiki.mncdn.com/Resource/Images/Banner/200123-100tlveuzeri-cb.jpg',
-      ],
       timer: null,
       currentIndex: 0,
       frame: 1,
