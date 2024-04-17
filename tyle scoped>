@@ -1,0 +1,118 @@
+[1mdiff --git a/data/db.json b/data/db.json[m
+[1mindex 24acaad..0e0dcd2 100644[m
+[1m--- a/data/db.json[m
+[1m+++ b/data/db.json[m
+[36m@@ -1,164 +1,3 @@[m
+ {[m
+[31m-  "products": [[m
+[31m-    {[m
+[31m-      "id": 3,[m
+[31m-      "name": "Elidor Güçlü ve Parlak",[m
+[31m-      "categories": [[m
+[31m-        "Kişisel Bakım"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/5ce65821fd9b330001c4a987_76c0c649-4e30-46ad-b22c-987d308e5748.jpeg",[m
+[31m-      "price": 25.9,[m
+[31m-      "originalPrice": 32.5,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 4,[m
+[31m-      "name": "Nogger Paketi",[m
+[31m-      "categories": [[m
+[31m-        "Dondurma"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/62e251a9316441a5a5928aff_tr_1659692215906.jpeg",[m
+[31m-      "price": 49,[m
+[31m-      "originalPrice": 60,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 5,[m
+[31m-      "name": "Erikli",[m
+[31m-      "categories": [[m
+[31m-        "Su & İçecek"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/5fbce44d7d580fc3304aee67_tr_1663337670673.jpeg",[m
+[31m-      "price": 31.1,[m
+[31m-      "originalPrice": 38.8,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 6,[m
+[31m-      "name": "Colgate Zig Zag Charcoal",[m
+[31m-      "categories": [[m
+[31m-        "Kişisel Bakım"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/5e936403f9f1a4e80b11e5aa_tr_1605687129209.png",[m
+[31m-      "price": 43.99,[m
+[31m-      "originalPrice": 43.99,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 7,[m
+[31m-      "name": "Sleepy Natural 2 Beden",[m
+[31m-      "categories": [[m
+[31m-        "Bebek"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/5ceae037c461e70001cc97f8_tr_1560255462225.jpeg",[m
+[31m-      "price": 12,[m
+[31m-      "originalPrice": 19,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 8,[m
+[31m-      "name": "Whiskas 1 Yaş Üstü Sığır Etli",[m
+[31m-      "categories": [[m
+[31m-        "Evcil Hayvan"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/55983faab1dc700c006a724d_tr_1601931914145.jpeg",[m
+[31m-      "price": 41.5,[m
+[31m-      "originalPrice": 55,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 9,[m
+[31m-      "name": "Cumhuriyet Gazetesi",[m
+[31m-      "categories": [[m
+[31m-        "Ev & Yaşam"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/5ea824181dbe2b58f152951f_tr_1588244080645.jpeg",[m
+[31m-      "price": 6,[m
+[31m-      "originalPrice": 6,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 10,[m
+[31m-      "name": "Metaltex Jolly Şişe Açacağı",[m
+[31m-      "categories": [[m
+[31m-        "Ev & Yaşam"[m
+[31m-      ],[m
+[31m-      "image": "https://cdn.getir.com/product/5ceae037c461e70001cc97f8_tr_1560255462225.jpeg",[m
+[31m-      "price": 23.5,[m
+[31m-      "originalPrice": 23.5,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 11,[m
+[31m-      "name": "Coca-Cola Zero Sugar",[m
+[31m-      "categories": [[m
+[31m-        "Su & İçecek"[m
+[31m-      ],[m
+[31m-      "image": "https://market-product-images-cdn.getirapi.com/product/57ebcb84-6a39-44bd-87d4-45fb638b7e9b.jpg",[m
+[31m-      "price": 62.5,[m
+[31m-      "originalPrice": 62.5,[m
+[31m-      "quantity": 1[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "id": 12,[m
+[31m-      "name": "Ice Dream Antep Fıstıklı",[m
+[31m-      "categories": [[m
+[31m-        "Dondurma"[m
+[31m-      ],[m
+[31m-      "images": "https://market-product-images-cdn.getirapi.com/product/5aadcf13-2a90-4178-b626-74ddf0e96115.jpg",[m
+[31m-      "price": 40,[m
+[31m-      "originalPrice": 40,[m
+[31m-      "quantity": 1[m
+[31m-    }[m
+[31m-

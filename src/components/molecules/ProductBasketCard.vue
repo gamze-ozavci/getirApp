@@ -32,47 +32,31 @@
         </div>
       </router-link>
       <div class="quantity-container flex-col flex">
-        <div class="increase-quantity quantity-button" @click="increaseQuantity(product.id)">+</div>
+        <div
+            class="increase-quantity quantity-button"
+            @click="addProductToBasket(product.id)">+</div>
         <div class="product-quantity quantity-button">{{ product.quantity }}</div>
-        <div class="decrease-quantity quantity-button" @click="decreaseQuantity(product.id)">-</div>
+        <div
+            class="decrease-quantity quantity-button"
+            @click="removeProductFromBasket(product.id)">-</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import apiRequests from '../../mixins/apiRequests.js';
+  import store from '../../store/index.js';
 export default {
   name: 'ProductBasketCard',
   props: [
     'productList'
   ],
-  mixins: [
-    apiRequests
-  ],
   methods: {
-    async increaseQuantity (productId) {
-      const currentQuantity = await this.increaseProductQuantity(productId);
-
-      this.updateProductQuantity(productId, currentQuantity);
+    addProductToBasket(productId) {
+      store.dispatch('addProductToBasket', productId);
     },
-    async decreaseQuantity (productId) {
-      const currentQuantity = await this.decreaseProductQuantity(productId);
-
-      this.updateProductQuantity(productId, currentQuantity);
-    },
-    updateProductQuantity (productId, currentQuantity) {
-      this.productList.some((product) => {
-        if (product.id === Number(productId)) {
-          product.quantity = currentQuantity;
-
-          if (product.quantity === 0) {
-            this.productList = [];
-          }
-
-          return true;
-        }
-      });
+    removeProductFromBasket(productId) {
+      store.dispatch('removeProductFromBasket', productId);
     }
   }
 }

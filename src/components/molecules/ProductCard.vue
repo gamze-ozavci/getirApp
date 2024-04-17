@@ -24,8 +24,9 @@
         {{ product.name }}
       </div>
       <div class="product-price-container gap-1 flex text-black text-lg">
-        <div v-if="product.price !== product.originalPrice"
-             class="product-discount-price font-medium line-through">
+        <div
+            v-if="product.price !== product.originalPrice"
+            class="product-discount-price font-medium line-through">
           {{ product.price }}₺
         </div>
         <div class="product-price font-semibold text-lg">
@@ -40,7 +41,7 @@
 </template>
 
 <script>
-  import apiRequests from '../../mixins/apiRequests.js';
+  import store from '../../store/index.js';
 
   export default {
     name: 'ProductCard',
@@ -48,9 +49,11 @@
       'selectedCategory',
       'productList'
     ],
-    mixins: [
-      apiRequests
-    ],
+    methods: {
+      addProductToBasket(productId) {
+        store.dispatch('addProductToBasket', productId);
+      }
+    },
   }
 </script>
 

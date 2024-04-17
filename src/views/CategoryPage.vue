@@ -14,8 +14,7 @@
   import CategoryNavbar from '../components/molecules/CategoryNavbar.vue';
   import ProductCard from '../components/molecules/ProductCard.vue';
   import Title from '../components/molecules/Title.vue';
-  import apiRequests from '../mixins/apiRequests.js';
-
+  import store from '../store/index.js';
   export default {
       name: 'CategoryPage',
       components: {
@@ -23,24 +22,20 @@
           ProductCard,
           Title
       },
-      mixins: [
-          apiRequests
-      ],
       data() {
           return {
               productList: [],
           }
       },
       methods: {
-          async setProductList () {
-            this.productList = await this.getProductsByCategory(this.$route.params.id);
-          }
+          setProductList () {
+              store.state.activeCategory = this.$route.params.id;
+
+              this.productList = store.getters.getProductsByCategory;
+          },
       },
       created() {
-        this.setProductList()
-      },
+          this.setProductList();
+      }
   }
 </script>
-
-<style>
-</style>

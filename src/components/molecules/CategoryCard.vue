@@ -12,8 +12,7 @@
         <img
             class="categories-image rounded-lg border-2"
             :src="`${ category.image }`">
-        <div
-            class="categories-title font-medium text-black text-base">
+        <div class="categories-title font-medium text-black text-base">
           {{ category.name }}
         </div>
       </router-link>
@@ -25,25 +24,14 @@
 </template>
 
 <script>
-import apiRequests from '../../mixins/apiRequests.js';
+import store from '../../store/index.js';
 
 export default {
-  mixins: [
-    apiRequests
-  ],
   data() {
     return {
-      categories: []
+      categories: store.state.categories
     }
-  },
-  methods: {
-    async getAllCategories () {
-      this.categories = await this.getCategories();
-    }
-  },
-  created() {
-    this.getAllCategories()
-  },
+  }
 }
 </script>
 

@@ -1,29 +1,29 @@
 <template>
   <Title :title="'SEPET'"></Title>
   <ProductBasketCard :productList="productList"></ProductBasketCard>
+  <CartButton :buttonText="'DEVAM ET'" :routerLink="'/checkout'"></CartButton>
 </template>
 
 <script>
-  import apiRequests from '../mixins/apiRequests';
   import Title from '../components/molecules/Title.vue';
+  import CartButton from '../components/molecules/CartButton.vue';
   import ProductBasketCard from '../components/molecules/ProductBasketCard.vue';
+  import store from '../store/index.js';
 export default {
   name: 'BasketPage',
-  mixins: [
-    apiRequests
-  ],
   components: {
     Title,
+    CartButton,
     ProductBasketCard
   },
   data() {
     return {
-      productList: [],
+      productList: []
     }
   },
   methods: {
     async getProductList () {
-      this.productList = await this.getProductsInBasket();
+      this.productList = store.getters.getProductsInBasket;
     }
   },
   created() {

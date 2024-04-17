@@ -18,29 +18,18 @@
 </template>
 
 <script>
-import apiRequests from '../../mixins/apiRequests.js';
+import store from '../../store/index.js';
 
 export default {
   name: 'CategoryNavbar',
-  mixins: [
-    apiRequests
-  ],
   props: [
     'selectedCategory'
   ],
   data() {
     return {
-      categories: []
+        categories: store.state.categories
     }
-  },
-  methods: {
-    async getAllCategories () {
-      this.categories = await this.getCategories();
-    }
-  },
-  created() {
-    this.getAllCategories()
-  },
+  }
 }
 </script>
 

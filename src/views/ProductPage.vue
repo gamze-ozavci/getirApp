@@ -31,13 +31,11 @@
 </template>
 
 <script>
-  import apiRequests from '../mixins/apiRequests';
   import Title from '../components/molecules/Title.vue';
+  import store from '../store/index.js';
+
   export default {
     name: 'ProductPage',
-    mixins: [
-      apiRequests
-    ],
     components: {
       Title
     },
@@ -47,8 +45,11 @@
       }
     },
     methods: {
-      async getProductData () {
-        this.product = await this.getProductById(this.$route.params.id);
+      getProductData () {
+        this.product = store.getters.getProductById(Number(this.$route.params.id));
+      },
+      addProductToBasket(productId) {
+        store.dispatch('addProductToBasket', productId);
       }
     },
     created() {
